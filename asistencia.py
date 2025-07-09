@@ -54,7 +54,7 @@ captura=cv2.VideoCapture(0,cv2.CAP_DSHOW)
 exito,imagen=captura.read()
 
 if not exito:
-    print("No se tomo la captura")
+    print("No se tomo la foto")
 else:
 
     #rgb
