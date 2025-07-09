@@ -14,4 +14,5 @@ Requisitos
 
 DIRECTORIOS:
 en Empleados/ se colocan todas las fotos de los empleados, cada foto debe tener como nombre el nombre completo del empleado.
+
 registro.csv se puede crear previamente aunque de igual manera se crea automaticamente con el primer registro. 
