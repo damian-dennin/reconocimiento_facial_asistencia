@@ -77,7 +77,9 @@ else:
 
         #mostrar coincidencias
         if distancias[indice_coincidencia]>0.6:
-            print("No coincide con ningun empleado")
+            cv2.putText(imagen, "No coincide con ningun empleado", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+            cv2.imshow("Reconocimiento facial",imagen)
+
         else:
             #buscamos el nombre del empleado con el indice que obtuvimos anteriormente
             nombre=nombres_empleados[indice_coincidencia]
@@ -90,6 +92,6 @@ else:
             registrar_ingreso(nombre)
 
             #mostrar la imagen obtenida
-            cv2.imshow("Empleado",imagen)
+            cv2.imshow("Reconocimiento facial",imagen)
             cv2.waitKey(0)
 
